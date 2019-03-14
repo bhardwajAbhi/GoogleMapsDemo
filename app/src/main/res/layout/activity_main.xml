@@ -9,13 +9,39 @@
   tools:context=".MainActivity">
 
 
-  <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+  <fragment
+    android:layout_weight="2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragment_map"
     tools:context=".MapsActivity"
     android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <EditText
+      android:layout_weight="2"
+      android:id="@+id/edt_location"
+      android:layout_width="0dp"
+      android:singleLine="true"
+      android:hint="Enter a place to search"
+      android:layout_height="wrap_content"/>
+
+    <Button
+      android:id="@+id/btn_search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="FIND"
+      android:textColor="@color/colorTextWhite"
+      android:background="#FFAB40"
+      />
+
+
+  </LinearLayout>
 
 
 </LinearLayout>
